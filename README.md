@@ -188,18 +188,17 @@ Pada proyek machine learning ini, metrik evaluasi yang digunakan yaitu mean squa
 ### Mean Squared Error (MSE)
 
 **Rumus MSE:**
+![alt text](VIZ/rumus MSE.jpg)
 
-\[
-MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
-\]
+dimana:
+At = Nilai Aktual permintaan
+Ft = Nilai hasil prediksi
+n = banyaknya data
 
-**Keterangan:**
-- \( n \): Jumlah data dalam dataset.
-- \( y_i \): Nilai aktual (ground truth) untuk data ke-\(i\).
-- \( \hat{y}_i \): Nilai prediksi untuk data ke-\(i\).
-- \( (y_i - \hat{y}_i)^2 \): Kuadrat dari error atau selisih antara nilai aktual dan prediksi.
+Setelah melakukan evaluasi menggunakan metrik mean squared error pada model dengan menggunakan data uji didapatkan hasil seperti berikut:
+![alt text](VIZ/mse.png)
 
-**Penjelasan:**
-- MSE mengukur rata-rata kesalahan kuadrat antara nilai prediksi (\(\hat{y}_i\)) dan nilai aktual (\(y_i\)).
-- Nilai MSE yang lebih kecil menunjukkan prediksi yang lebih baik.
-- Karena menggunakan kuadrat, MSE lebih sensitif terhadap outlier.
+Dapat dilihat dari visulisasi diatas bahwa MSE pada model SVR merupakan MSE yang paling rendah dari kedua model lainnya, selain itu jumlah error pada saat pengujian tidak berbeda jauh dengan error pada saat pelatihan.
+![alt text](VIZ/prediksi.png)
+
+Dapat juga dilihat melalui visualisasi diatas bahwa angka prediksi pada model SVR yang paling mendekati dengan angka sebenarnya.
