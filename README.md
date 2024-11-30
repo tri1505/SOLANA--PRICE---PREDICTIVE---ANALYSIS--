@@ -185,7 +185,6 @@ Parameter pada parameters XGBoost (Extreme Gradient Boosting)
 ## Evaluation
 Pada proyek machine learning ini, metrik evaluasi yang digunakan yaitu mean squared error (MSE) yang mana metrik ini merupakan ukuran seberapa dekat garis pas dengan titik data. Untuk setiap titik data, model mengambil jarak secara vertikal dari titik ke nilai y yang sesuai pada kecocokan kurva (kesalahan), dan kuadratkan nilainya.
 
-### Mean Squared Error (MSE)
 
 **Rumus MSE:**
 
