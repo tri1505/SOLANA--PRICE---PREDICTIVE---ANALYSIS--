@@ -9,5 +9,5 @@ Teknologi kecerdasan buatan dan pembelajaran mesin (machine learning) telah terb
 Proyek ini bertujuan untuk mengembangkan model prediktif harga Solana menggunakan data historis pasar, termasuk harga, volume perdagangan, serta indikator teknis dan fundamental. Hasil penelitian ini diharapkan dapat memberikan kontribusi signifikan dalam pemahaman dan pengelolaan risiko dalam investasi cryptocurrency, khususnya Solana, di tengah dinamika pasar yang terus berkembang.
 
 ### Referensi
--Survey on Cryptocurrency Price Prediction Using Machine Learning [Survey on Cryptocurrency Price Prediction Using Machine Learning]([https://www.example.com](https://www.ijres.org/papers/Volume-10/Issue-2/Ser-3/G10124247.pdf))
+-**[Survey on Cryptocurrency Price Prediction Using Machine Learning](https://www.ijres.org/papers/Volume-10/Issue-2/Ser-3/G10124247.pdf)**
 
