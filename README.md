@@ -26,7 +26,7 @@ Melakukan tuning hyperparameter menggunakan metode seperti Grid Search untuk men
 
 2. Mengevaluasi Performa Model
 
-Membandingkan performa model dengan metrik evaluasi seperti Mean Squared Error (MSE
+Membandingkan performa model dengan metrik evaluasi seperti Mean Squared Error (MSE)
 
 ### Solution Statement
 Solusi yang dapat diterapkan agar goals diatas terpenuhi adalah sebagai berikut:
