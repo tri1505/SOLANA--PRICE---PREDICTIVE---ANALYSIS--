@@ -181,3 +181,25 @@ Parameter pada parameters XGBoost (Extreme Gradient Boosting)
  -Membantu menangani overfitting, terutama pada dataset dengan banyak fitur.
 
  -Contoh nilai: [0.8, 0.9, 1.0].
+
+## Evaluation
+Pada proyek machine learning ini, metrik evaluasi yang digunakan yaitu mean squared error (MSE) yang mana metrik ini merupakan ukuran seberapa dekat garis pas dengan titik data. Untuk setiap titik data, model mengambil jarak secara vertikal dari titik ke nilai y yang sesuai pada kecocokan kurva (kesalahan), dan kuadratkan nilainya.
+
+### Mean Squared Error (MSE)
+
+**Rumus MSE:**
+
+\[
+MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+\]
+
+**Keterangan:**
+- \( n \): Jumlah data dalam dataset.
+- \( y_i \): Nilai aktual (ground truth) untuk data ke-\(i\).
+- \( \hat{y}_i \): Nilai prediksi untuk data ke-\(i\).
+- \( (y_i - \hat{y}_i)^2 \): Kuadrat dari error atau selisih antara nilai aktual dan prediksi.
+
+**Penjelasan:**
+- MSE mengukur rata-rata kesalahan kuadrat antara nilai prediksi (\(\hat{y}_i\)) dan nilai aktual (\(y_i\)).
+- Nilai MSE yang lebih kecil menunjukkan prediksi yang lebih baik.
+- Karena menggunakan kuadrat, MSE lebih sensitif terhadap outlier.
