@@ -96,4 +96,5 @@ Jika dilihat divisualisasi outlier dibawah hampir semua data numeric memiliki da
 Jika di lihat dari visualisasi data dibawah. Fitur Close pada sumbu y memiliki korelasi dengan data pada fitur High, Low, Open, dan adj_close. Korelasi yang terdapat pada data-data tersebut merupakan korelas yang tinggi, sedangkan untuk fitur Volume terlihat memiliki korelasi yang cukup lemah karena sebaran datanya tidak membentuk pola
 ![alt text](VIZ/multivariate.png)
 
+## Data Preparation
 
