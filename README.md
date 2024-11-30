@@ -56,14 +56,21 @@ Dataset yang di gunakan pada proyek machine learning ini merupakan Dataset yang 
 
 Setelah dilakukan analisa pada data, didapatkan informasi bahwa:
 
-Format dataset yaitu CSV (Comma-Seperated Values)
-Jumlah kolom data yang terdapat didalam dataset berjumla 10 kolom, antara lain: SNo, Name, Symbol, Date, High, Low, Open, Close, Volume, Marketcap.
-Terdapat 2161 jumlah sample yang terdapat didalam dataset.
-Terdapat 6 kolom data yang memiliki tipe data Float yaitu (High, Low, Open, Close, Volume, Marketcap),
-Terdapat 1 kolom data yang memiliki tipe data Integer yaitu (SNo)
-Terdapat 2 kolom data yang memiliki tipe data Object atau String yaitu (Name, Symbol)
-Tidak terdapat missing value pada dataset
-Variabel-variabel pada dataset adalah sebagai berikut:
+-Format dataset yaitu CSV (Comma-Seperated Values)
+
+-Jumlah kolom data yang terdapat didalam dataset berjumla 7 kolom, antara lain: Date, Open, High, Low, Close, Adj Close, Volume
+
+-Terdapat 715 jumlah sample yang terdapat didalam dataset.
+
+-Terdapat 5 kolom data yang memiliki tipe data Float yaitu (High, Low, Open, Close, adj close).
+
+-Terdapat 1 kolom data yang memiliki tipe data Integer yaitu (Volume)
+
+-Terdapat 2 kolom data yang memiliki tipe data Object atau String yaitu (Date)
+
+-Tidak terdapat missing value pada dataset
+
+### Variabel-variabel pada dataset adalah sebagai berikut:
 Name: Nama mata uang kripto
 Symbol: Simbol mata uang kripto
 Date: Tanggal pencatatan data
