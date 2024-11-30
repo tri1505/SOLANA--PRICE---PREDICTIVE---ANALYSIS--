@@ -31,19 +31,22 @@ Membandingkan performa model dengan metrik evaluasi seperti Mean Squared Error (
 ### Solution Statement
 Solusi yang dapat diterapkan agar goals diatas terpenuhi adalah sebagai berikut:
 
-Melakukan analisa pada data untuk dapat memahami data yang ada dengan menerapkan teknik visualisasi data. Analisa yang dapat dilakukan yaitu, antara lain:
-
-Memeriksa korelasi antar data penting untuk memahami hubungan data target dan data fitur.
+Melakukan analisa pada data untuk dapat memahami data yang ada dengan menerapkan teknik visualisasi data. Analisa yang dapat dilakukan yaitu, Memeriksa korelasi antar data penting untuk memahami hubungan data target dan data fitur.
 
 Melakukan pemrosesan pada data seperti:
 
-Mengatasi outlier pada data dengan menerapkan IQR method.
-Normalisasi data pada fitur numerik.
+1.Mengatasi outlier pada data dengan menerapkan IQR method.
+
+2. Normalisasi data pada fitur numerik.
+
 Membangun model regresi yang dapat memprediksi bilangan kontinu sesuai dengan permasalahan yang ingin di selesaikan. Beberapa algoritma yang akan digunakan pada model regresi proyek ini yaitu, sebagai berikut:
 
 -Support Vector Machine
+
 -K-Nearest Neighbours
+
 -Random Forest
+
 -XGBoost
 
 Menerapkan teknik Grid Search untuk mendapatkan parameter-parameter dengan performa terbaik pada masing-masing model.
