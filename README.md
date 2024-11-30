@@ -202,7 +202,7 @@ Setelah melakukan evaluasi menggunakan metrik mean squared error pada model deng
 
 ![alt text](VIZ/mse.png)
 
-Dapat dilihat dari visulisasi diatas bahwa MSE pada model SVR merupakan MSE yang paling rendah dari kedua model lainnya, selain itu jumlah error pada saat pengujian tidak berbeda jauh dengan error pada saat pelatihan.
+Dapat dilihat dari visualisasi diatas bahwa MSE pada model SVR merupakan MSE yang paling rendah dari kedua model lainnya, selain itu jumlah error pada saat pengujian tidak berbeda jauh dengan error pada saat pelatihan.
 
 ![alt text](VIZ/prediksi.png)
 
