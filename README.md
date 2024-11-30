@@ -91,5 +91,9 @@ Sebelum melakukan pemrosesan data untuk pelatihan, perlu dilakukan analisa pada 
 1.Menangani Oulier
 Jika dilihat divisualisasi outlier dibawah hampir semua data numeric memiliki data outlier. Terdapat beberapa teknik untuk mengatasi outlier pada data. Pada proyek ini akan menerapkan teknik IQR Method yaitu dengan menghapus data yang berada diluar interquartile range. Interquartile merupakan range diantara kuartil pertama(25%) dan kuartil ketiga(75%).
 	![alt text](VIZ/outlier.png)
+ 
+2.Multivariate Analysis
+Jika di lihat dari visualisasi data dibawah. Fitur Close pada sumbu y memiliki korelasi dengan data pada fitur High, Low, Open, dan adj_close. Korelasi yang terdapat pada data-data tersebut merupakan korelas yang tinggi, sedangkan untuk fitur Volume terlihat memiliki korelasi yang cukup lemah karena sebaran datanya tidak membentuk pola
+![alt text](VIZ/multivariate.png)
 
 
