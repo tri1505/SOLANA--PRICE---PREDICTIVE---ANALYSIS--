@@ -100,7 +100,7 @@ Jika di lihat dari visualisasi data dibawah. Fitur Close pada sumbu y memiliki k
 
 Berikut merupakan tahapan dalam mempersiapkan data untuk keperluan pelatihan model:
 
-# Menghapus data yang tidak diperlukan dan merubah nama column
+### Menghapus data yang tidak diperlukan dan merubah nama column
 Kolom data seperti (Date, Adj Close, Value) tidak diperlukan untuk pelatihan, karena data tersebut akan mengganggu model dalam mempelajari data. Karena isi dari data tersebut tidak memiliki value yang berarti untuk dipelajari oleh model. Lalu, mengubah nama kolom High, Low, Open, Close menjadi nama kolom yang dapat lebih dipahami
 | From        | to	    |
 | ----------- | ----------- |
