@@ -189,9 +189,10 @@ Pada proyek machine learning ini, metrik evaluasi yang digunakan yaitu mean squa
 
 **Rumus MSE:**
 
-![alt text](VIZ/rumus MSE.jpg)
+![alt text](VIZ/rumusMSE.jpg)
 
 dimana:
+
 At = Nilai Aktual permintaan
 
 Ft = Nilai hasil prediksi
