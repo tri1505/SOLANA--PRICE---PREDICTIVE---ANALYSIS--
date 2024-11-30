@@ -37,7 +37,7 @@ Melakukan pemrosesan pada data seperti:
 
 1.Mengatasi outlier pada data dengan menerapkan IQR method.
 
-2. Normalisasi data pada fitur numerik.
+2.Normalisasi data pada fitur numerik.
 
 Membangun model regresi yang dapat memprediksi bilangan kontinu sesuai dengan permasalahan yang ingin di selesaikan. Beberapa algoritma yang akan digunakan pada model regresi proyek ini yaitu, sebagai berikut:
 
@@ -50,4 +50,27 @@ Membangun model regresi yang dapat memprediksi bilangan kontinu sesuai dengan pe
 -XGBoost
 
 Menerapkan teknik Grid Search untuk mendapatkan parameter-parameter dengan performa terbaik pada masing-masing model.
+
+### Data Understanding
+Dataset yang di gunakan pada proyek machine learning ini merupakan Dataset yang menyediakan riwayat harga harian Solana dari tahun 2020 - 2022. Dataset tersebut dapat di unduh di website kaggle: **[Solana Data](https://www.kaggle.com/datasets/varpit94/solana-data)**
+
+Setelah dilakukan analisa pada data, didapatkan informasi bahwa:
+
+Format dataset yaitu CSV (Comma-Seperated Values)
+Jumlah kolom data yang terdapat didalam dataset berjumla 10 kolom, antara lain: SNo, Name, Symbol, Date, High, Low, Open, Close, Volume, Marketcap.
+Terdapat 2161 jumlah sample yang terdapat didalam dataset.
+Terdapat 6 kolom data yang memiliki tipe data Float yaitu (High, Low, Open, Close, Volume, Marketcap),
+Terdapat 1 kolom data yang memiliki tipe data Integer yaitu (SNo)
+Terdapat 2 kolom data yang memiliki tipe data Object atau String yaitu (Name, Symbol)
+Tidak terdapat missing value pada dataset
+Variabel-variabel pada dataset adalah sebagai berikut:
+Name: Nama mata uang kripto
+Symbol: Simbol mata uang kripto
+Date: Tanggal pencatatan data
+High : Harga tertinggi pada hari tertentu
+Low : Harga terendah pada hari tertentu
+Open : Harga pembukaan pada hari tertentu
+Close : Harga penutupan pada hari tertentu
+Volume : Volume transaksi pada hari tertentu
+Mastercap : Kapitalisasi pasar dalam USD
 
