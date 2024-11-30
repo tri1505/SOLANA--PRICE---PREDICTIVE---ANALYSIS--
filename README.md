@@ -86,4 +86,10 @@ Setelah dilakukan analisa pada data, didapatkan informasi bahwa:
 
 -Volume : Volume transaksi pada hari tertentu
 
+Sebelum melakukan pemrosesan data untuk pelatihan, perlu dilakukan analisa pada data untuk mengetahui keadaan pada data seperti korelasi antar fitur dan outlier pada data. Berikut visualisasi data yang menunjukkan korelasi atar fitur dan outlier pada data:
+
+1.Menangani Oulier
+Jika dilihat divisualisasi outlier dibawah hampir semua data numeric memiliki data outlier. Terdapat beberapa teknik untuk mengatasi outlier pada data. Pada proyek ini akan menerapkan teknik IQR Method yaitu dengan menghapus data yang berada diluar interquartile range. Interquartile merupakan range diantara kuartil pertama(25%) dan kuartil ketiga(75%).
+	![alt text](VIZ/outlier.png)
+
 
