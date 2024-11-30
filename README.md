@@ -11,3 +11,9 @@ Proyek ini bertujuan untuk mengembangkan model prediktif harga Solana menggunaka
 ### Referensi
 -**[Survey on Cryptocurrency Price Prediction Using Machine Learning](https://www.ijres.org/papers/Volume-10/Issue-2/Ser-3/G10124247.pdf)**
 
+## Business Understanding
+### Problem Statement
+Pasar cryptocurrency, termasuk Solana (SOL), memiliki sifat yang sangat volatil dan kompleks dengan pola pergerakan harga yang dipengaruhi oleh berbagai faktor seperti sentimen pasar, tren keuangan global, dan indikator teknikal. Kompleksitas ini menyulitkan prediksi harga yang akurat, padahal prediksi yang andal sangat penting bagi para investor dan trader untuk membuat keputusan yang tepat.
+
+Meskipun terdapat data historis yang melimpah mengenai pergerakan harga Solana, pendekatan prediksi yang ada sering kali gagal menangkap pola rumit dan sifat non-stasioner dari pasar cryptocurrency. Model statistik tradisional cenderung kurang mampu menggeneralisasi hubungan yang kompleks, sementara penerapan model machine learning yang lebih canggih pada pasar Solana masih terbatas atau kurang dioptimalkan.
+
