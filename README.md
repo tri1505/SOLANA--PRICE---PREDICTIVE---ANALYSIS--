@@ -71,13 +71,19 @@ Setelah dilakukan analisa pada data, didapatkan informasi bahwa:
 -Tidak terdapat missing value pada dataset
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
-Name: Nama mata uang kripto
-Symbol: Simbol mata uang kripto
-Date: Tanggal pencatatan data
-High : Harga tertinggi pada hari tertentu
-Low : Harga terendah pada hari tertentu
-Open : Harga pembukaan pada hari tertentu
-Close : Harga penutupan pada hari tertentu
-Volume : Volume transaksi pada hari tertentu
-Mastercap : Kapitalisasi pasar dalam USD
+
+-Date: Tanggal pencatatan data
+
+-High : Harga tertinggi pada hari tertentu
+
+-Adj High : Copy harga tertinggi pada hari tertentu
+
+-Low : Harga terendah pada hari tertentu
+
+-Open : Harga pembukaan pada hari tertentu
+
+-Close : Harga penutupan pada hari tertentu
+
+-Volume : Volume transaksi pada hari tertentu
+
 
