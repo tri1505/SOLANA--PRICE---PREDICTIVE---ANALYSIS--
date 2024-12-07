@@ -40,7 +40,7 @@ subsample: Mengontrol proporsi data yang digunakan untuk membangun setiap pohon 
 n_estimators: Menentukan jumlah pohon keputusan yang akan dibangun. Jumlah pohon yang terlalu sedikit dapat menyebabkan underfitting, sedangkan jumlah pohon yang terlalu banyak dapat menyebabkan overfitting.
 
 ### Data Understanding
-Dataset yang di gunakan pada proyek machine learning ini merupakan Dataset yang menyediakan riwayat harga harian Solana dari tahun 2020 - 2024. Dataset tersebut dapat di unduh di website Investing.com: **[Solana Data][https://www.investing.com/crypto/solana/historical-data]**
+Dataset yang di gunakan pada proyek machine learning ini merupakan Dataset yang menyediakan riwayat harga harian Solana dari tahun 2020 - 2024. Dataset tersebut dapat di unduh di website Investing.com: **[https://www.investing.com/crypto/solana/historical-data]**
 
 Setelah dilakukan analisa pada data, didapatkan informasi bahwa:
 
