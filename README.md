@@ -46,17 +46,15 @@ Setelah dilakukan analisa pada data, didapatkan informasi bahwa:
 
 -Format dataset yaitu CSV (Comma-Seperated Values)
 
--Jumlah kolom data yang terdapat didalam dataset berjumla 7 kolom, antara lain: Date, Open, High, Low, Close, Adj Close, Volume
+-Jumlah kolom data yang terdapat didalam dataset berjumla 7 kolom, antara lain: Date, Open, High, Low, Price, Change, Volume
 
--Terdapat 715 jumlah sample yang terdapat didalam dataset.
+-Terdapat 1603 jumlah sample yang terdapat didalam dataset.
 
--Terdapat 5 kolom data yang memiliki tipe data Float yaitu (High, Low, Open, Close, adj close).
+-Terdapat 4 kolom data yang memiliki tipe data Float yaitu (High, Low, Open, Price).
 
--Terdapat 1 kolom data yang memiliki tipe data Integer yaitu (Volume)
+-Terdapat 2 kolom data yang memiliki tipe data Object atau String yaitu (Date, Volume, Change)
 
--Terdapat 2 kolom data yang memiliki tipe data Object atau String yaitu (Date)
-
--Tidak terdapat missing value pada dataset
+-ditemukan missing value sebanyak 398 pada kolom vol
 
 ### Variabel-variabel pada dataset adalah sebagai berikut:
 
@@ -64,25 +62,24 @@ Setelah dilakukan analisa pada data, didapatkan informasi bahwa:
 
 -High : Harga tertinggi pada hari tertentu
 
--Adj High : Copy harga tertinggi pada hari tertentu
-
 -Low : Harga terendah pada hari tertentu
 
 -Open : Harga pembukaan pada hari tertentu
 
--Close : Harga penutupan pada hari tertentu
+-Price : Harga penutupan pada hari tertentu
 
 -Volume : Volume transaksi pada hari tertentu
 
-Sebelum melakukan pemrosesan data untuk pelatihan, perlu dilakukan analisa pada data untuk mengetahui keadaan pada data seperti korelasi antar fitur dan outlier pada data. Berikut visualisasi data yang menunjukkan korelasi atar fitur dan outlier pada data:
+-Change% : perubahan persentase dalam harga Solana (SOL) dalam periode waktu tertentu
 
-1.Menangani Oulier
-Jika dilihat divisualisasi outlier dibawah hampir semua data numeric memiliki data outlier. Terdapat beberapa teknik untuk mengatasi outlier pada data. Pada proyek ini akan menerapkan teknik IQR Method yaitu dengan menghapus data yang berada diluar interquartile range. Interquartile merupakan range diantara kuartil pertama(25%) dan kuartil ketiga(75%).
-	![alt text](VIZ/outlier.png)
- 
-2.Multivariate Analysis
-Jika di lihat dari visualisasi data dibawah. Fitur Close pada sumbu y memiliki korelasi dengan data pada fitur High, Low, Open, dan adj_close. Korelasi yang terdapat pada data-data tersebut merupakan korelas yang tinggi, sedangkan untuk fitur Volume terlihat memiliki korelasi yang cukup lemah karena sebaran datanya tidak membentuk pola
-![alt text](VIZ/multivariate.png)
+Untuk memahami data, selanjutnya akan dilakukan proses berikut:
+
+1. Data Loading
+Supaya isi dataset lebih mudah dipahami, kita perlu melakukan proses loading data terlebih dahulu dengan import library pandas untuk dapat membaca file datanya.
+
+2. Exploratory Data Analysis
+Informasi Dataset
+Mengecek informasi pada dataset dengan fungsi info() berikut.
 
 ## Data Preparation
 
