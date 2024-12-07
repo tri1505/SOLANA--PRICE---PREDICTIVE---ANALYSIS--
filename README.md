@@ -13,46 +13,34 @@ Proyek ini bertujuan untuk mengembangkan model prediktif harga Solana menggunaka
 
 ## Business Understanding
 ### Problem Statement
-Pasar cryptocurrency, termasuk Solana (SOL), memiliki sifat yang sangat volatil dan kompleks dengan pola pergerakan harga yang dipengaruhi oleh berbagai faktor seperti sentimen pasar, tren keuangan global, dan indikator teknikal. Kompleksitas ini menyulitkan prediksi harga yang akurat, padahal prediksi yang andal sangat penting bagi para investor dan trader untuk membuat keputusan yang tepat.
+Berdasarkan kondisi yang telah diuraikan sebelumnya, proyek ini akan mengembangkan sebuah sistem prediksi harga Solana berdasarkan data historis yaitu harga tertinggi, harga terendah, harga pembukaan, harga penutupan, dimana masing masing faktor memiliki peran penting dalam pergerakan harga Solana seperti:
 
-Meskipun terdapat data historis yang melimpah mengenai pergerakan harga Solana, pendekatan prediksi yang ada sering kali gagal menangkap pola rumit dan sifat non-stasioner dari pasar cryptocurrency. Model statistik tradisional cenderung kurang mampu menggeneralisasi hubungan yang kompleks, sementara penerapan model machine learning yang lebih canggih pada pasar Solana masih terbatas atau kurang dioptimalkan
+Harga Tertinggi: Mencerminkan titik harga tertinggi yang dicapai Solana dalam periode tertentu. Faktor ini penting karena menunjukkan batas atas kekuatan beli di pasar dan sering kali menjadi patokan untuk menentukan apakah harga sedang mendekati titik resistensi.
+Harga Terendah: Menunjukkan titik terendah harga Solana dalam periode tertentu. Ini membantu mengidentifikasi titik dukungan dimana tekanan jual mungkin telah memudar, memberikan gambaran mengenai batas bawah dari volatilitas pasar.
+Harga Pembukaan: Adalah harga awal dari Solana di awal periode perdagangan. Perbandingan antara harga pembukaan dan harga penutupan bisa memberikan indikasi tentang tren pasar yang sedang terjadi, apakah tren naik (bullish) atau turun (bearish).
+Harga Penutupan: Harga pada akhir periode perdagangan merupakan salah satu indikator kunci yang sering digunakan untuk melihat kecenderungan harga secara keseluruhan. Perubahan harga penutupan dari waktu ke waktu membantu dalam memahami pola tren harga di masa depan.
+
+Bagaimana cara memanfaatkan data historis harga Solana seperti harga pembukaan, harga penutupan, harga tertinggi, harga terendah, untuk memprediksi harganya di masa depan?
+Bagaimana cara mengoptimalkan kinerja algoritma XGBoost untuk memprediksi harga Solana melalui parameter-parameter penting seperti learning rate, max_depth, subsample, dan n_estimators?
 
 ### Goal
-Penelitian ini bertujuan untuk mengembangkan model prediktif berbasis machine learning yang mampu memprediksi harga Solana (SOL) secara akurat dengan cara berikut:
-1. Membangun Model Prediksi yang Optimal
+Untuk menjawab problem statement tersebut, akan dibuat predictive modelling dengan tujuan atau goals sebagai berikut:
 
-Menggunakan algoritma machine learning seperti Support Vector Regression (SVR), Random Forest (RF), k-Nearest Neighbors (KNN), dan XGBoost untuk membangun model prediksi.
-Melakukan tuning hyperparameter menggunakan metode seperti Grid Search untuk meningkatkan akurasi prediksi.
-
-2. Mengevaluasi Performa Model
-
-Membandingkan performa model dengan metrik evaluasi seperti Mean Squared Error (MSE)
+Membuat model machine learning yang dapat memprediksi harga Solana untuk 10 hari ke depan berdasarkan parameter yang ditetapkan.
+Mencari nilai optimal untuk learning rate, max_depth, subsample, dan n_estimators pada algoritma XGBoost melalui proses hyperparameter tuning, dengan tujuan memaksimalkan akurasi prediksi harga Solana.
 
 ### Solution Statement
-Solusi yang dapat diterapkan agar goals diatas terpenuhi adalah sebagai berikut:
+Untuk mencapai goals tersebut, ada 2 pendekatan yang akan digunakan yaitu:
 
-Melakukan analisa pada data untuk dapat memahami data yang ada dengan menerapkan teknik visualisasi data. Analisa yang dapat dilakukan yaitu, Memeriksa korelasi antar data penting untuk memahami hubungan data target dan data fitur.
-
-Melakukan pemrosesan pada data seperti:
-
-1.Mengatasi outlier pada data dengan menerapkan IQR method.
-
-2.Normalisasi data pada fitur numerik.
-
-Membangun model regresi yang dapat memprediksi bilangan kontinu sesuai dengan permasalahan yang ingin di selesaikan. Beberapa algoritma yang akan digunakan pada model regresi proyek ini yaitu, sebagai berikut:
-
--Support Vector Machine
-
--K-Nearest Neighbours
-
--Random Forest
-
--XGBoost
-
-Menerapkan teknik Grid Search untuk mendapatkan parameter-parameter dengan performa terbaik pada masing-masing model.
+Menggunakan Algoritma XGBoost: XGBoost merupakan algoritma ensemble yang sangat cocok untuk tugas prediksi, terutama pada data yang kompleks dan nonlinear seperti data harga Solana. XGBoost bekerja dengan membangun banyak pohon keputusan (decision tree) secara berurutan, dengan setiap pohon belajar dari kesalahan pohon sebelumnya. Struktur ensemble ini memungkinkan XGBoost menangkap pola yang kompleks dalam data dan menghasilkan prediksi yang lebih akurat.
+Menentukan Nilai Optimal untuk Hyperparameter XGBoost: Untuk mengoptimalkan kinerja model XGBoost, kita akan melakukan hyperparameter tuning. Hyperparameter adalah parameter yang tidak dipelajari oleh model selama pelatihan, melainkan diatur sebelum pelatihan dimulai. Beberapa hyperparameter penting pada XGBoost antara lain:
+learning_rate: Mengontrol tingkat di mana model belajar dari setiap iterasi. Nilai yang terlalu besar dapat menyebabkan overfitting, sedangkan nilai yang terlalu kecil dapat memperlambat konvergensi.
+max_depth: Mengontrol kedalaman maksimum pohon keputusan. Nilai yang terlalu besar dapat menyebabkan overfitting, sedangkan nilai yang terlalu kecil dapat menghambat kemampuan model untuk menangkap pola yang kompleks.
+subsample: Mengontrol proporsi data yang digunakan untuk membangun setiap pohon keputusan. Subsampling dapat membantu mengurangi overfitting.
+n_estimators: Menentukan jumlah pohon keputusan yang akan dibangun. Jumlah pohon yang terlalu sedikit dapat menyebabkan underfitting, sedangkan jumlah pohon yang terlalu banyak dapat menyebabkan overfitting.
 
 ### Data Understanding
-Dataset yang di gunakan pada proyek machine learning ini merupakan Dataset yang menyediakan riwayat harga harian Solana dari tahun 2020 - 2022. Dataset tersebut dapat di unduh di website kaggle: **[Solana Data](https://www.kaggle.com/datasets/varpit94/solana-data)**
+Dataset yang di gunakan pada proyek machine learning ini merupakan Dataset yang menyediakan riwayat harga harian Solana dari tahun 2020 - 2022. Dataset tersebut dapat di unduh di website kaggle: **[Solana Data]([https://www.investing.com/crypto/solana/historical-data])**
 
 Setelah dilakukan analisa pada data, didapatkan informasi bahwa:
 
